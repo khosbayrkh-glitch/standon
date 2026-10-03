@@ -559,7 +559,7 @@ class Game3DPainter extends CustomPainter {
     void draw3DCylinder(v64.Vector3 pos, double radius, double height, Color color) {
       var shadowCenter = project(pos);
       if (shadowCenter != null) {
-        canvas.drawOval(Rect.fromCenter(center: shadowCenter, width: radius * 35, height: radius * 18), Paint()..color = Colors.black46);
+        canvas.drawOval(Rect.fromCenter(center: shadowCenter, width: radius * 35, height: radius * 18), Paint()..color = Colors.black45);
       }
 
       var bottom = project(pos);
